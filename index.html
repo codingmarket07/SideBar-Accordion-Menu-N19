@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sidebar Accordion Menu</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".navbar  ul.menu li a").click(function(){
+			  $(".navbar ul.menu li").removeClass("active");
+			  $(this).parent().addClass("active");
+			})
+		})
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="navbar">
+       <div class="profile_wrap">
+          <div class="profile_img">
+            <img src="profile.png" alt="">
+          </div>  
+          <div class="profile_info">
+              <p class="name">Evelyn weaver</p>  
+              <p class="role">UI Developer</p>
+          </div>
+       </div>  
+       <ul class="menu">
+          <li class="active"><a href="#">
+            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+            <span class="title">Dashboard</span>
+            </a></li>  
+          <li><a href="#">
+            <span class="icon"><i class="fas fa-car"></i></span>
+            <span class="title">Cars</span>
+            <span class="arrow"><i class="fas fa-sort-down"></i></span>
+            </a>
+            <ul class="accordion_menu">
+               <li><a href="#">Cars_1</a></li>
+               <li><a href="#">Cars_2</a></li>
+               <li><a href="#">Cars_3</a></li>
+            </ul>
+         </li>
+          <li><a href="#">
+            <span class="icon"><i class="fas fa-motorcycle"></i></span>
+            <span class="title">Bikes</span>
+            <span class="arrow"><i class="fas fa-sort-down"></i></span>
+            </a>
+            <ul class="accordion_menu">
+               <li><a href="#">Bikes_1</a></li>
+               <li><a href="#">Bikes_2</a></li>
+               <li><a href="#">Bikes_3</a></li>
+            </ul>
+         </li>
+         <li><a href="#">
+           <span class="icon"><i class="fas fa-bicycle"></i></span>
+            <span class="title">Bicycle</span>
+           <span class="arrow"><i class="fas fa-sort-down"></i></span>
+           </a>
+           <ul class="accordion_menu">
+               <li><a href="#">Bicycle_1</a></li>
+               <li><a href="#">Bicycle_2</a></li>
+               <li><a href="#">Bicycle_3</a></li>
+            </ul>
+         </li>
+         <li><a href="#">
+           <span class="icon"><i class="fas fa-cog"></i></span>
+            <span class="title">Settings</span></a></li>
+         <li><a href="#">
+           <span class="icon"><i class="far fa-question-circle"></i></span>
+            <span class="title">Help</span></a></li>
+       </ul>
+       <div class="logout_btn">
+         logout
+      </div>
+    </div>
+</div>	
+	
+</body>
+</html>

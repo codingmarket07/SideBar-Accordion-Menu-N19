@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #1790d4;
+  color: #555555;
+}
+
+.wrapper{
+  width: 250px;
+  height: 760px;
+  background: #fff;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(255,255,255,0.25);
+}
+
+.wrapper .navbar{
+  position: relative;
+}
+
+.wrapper .navbar .profile_wrap{
+  padding: 25px;
+  text-align: center;
+}
+
+.wrapper .navbar .profile_wrap .profile_img{
+  width: 100px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.wrapper .navbar .profile_wrap .profile_img img{
+  width: 100%;
+}
+
+.wrapper .navbar .profile_wrap .profile_info .name{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1790d4;
+}
+
+.wrapper .navbar .profile_wrap .profile_info .role{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.wrapper .navbar  ul.menu {
+   padding: 25px;
+   height: 460px;
+}
+
+.wrapper .navbar  ul.menu li > a{
+  display: block;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  color: #8c9ba7;
+  position: relative;
+}
+
+.wrapper .navbar  ul.menu li a > span{
+  display: inline-block;
+}
+
+.wrapper .navbar  ul.menu li a span.icon{
+  margin-right: 10px;
+}
+
+.wrapper .navbar  ul.menu li a span.arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .navbar  ul.menu li.active > a{
+  color: #1790d4;
+}
+
+.wrapper .navbar  ul.menu li.active a span.arrow{
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.wrapper .navbar .accordion_menu{
+  transition: all 0.3s ease;
+  height: 0px;
+  overflow: hidden;
+}
+
+.wrapper .navbar ul.menu .accordion_menu li a{
+  padding: 10px;
+  padding-left: 45px;
+  height: auto;
+  position: relative;
+}
+
+.wrapper .navbar ul.menu .accordion_menu li a:hover{
+  background: #e1f4ff;
+  color:  #1790d4;
+}
+
+.wrapper .navbar ul.menu .accordion_menu li a:before{
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 8px;
+  height: 8px;
+  background: #8c9ba7;
+  border-radius: 50%;
+}
+
+.wrapper .navbar ul.menu .accordion_menu li a:hover:before{
+  background: #1790d4;
+}
+
+.wrapper .navbar  ul.menu li.active .accordion_menu{
+  height: 125px;
+}
+
+.wrapper .navbar .logout_btn{
+  margin: 25px auto 0;
+  width: 200px;
+  background: #1790d4;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrapper .navbar .logout_btn:hover{
+  background: #41bbff;
+}
